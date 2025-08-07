@@ -11,7 +11,7 @@ readStream.on('data', (chunk) => {
 });
 
 readStream.on('end', () => {
-    console.log('No more data to read.');
+    console.log('No more data to read. ');
 });
 
 readStream.on('error', (err) => {
