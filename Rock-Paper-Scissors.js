@@ -1,3 +1,23 @@
+/**
+ * A simple HTTP server for a Rock-Paper-Scissors game.
+ * 
+ * - Serves an HTML file at the root path ("/") for GET requests.
+ * - Handles POST requests at the root path ("/") to play the game.
+ * - Responds with a 404 page for unknown paths.
+ * 
+ * @module RockPaperScissorsServer
+ */
+
+ /**
+    * Handles POST requests for the Rock-Paper-Scissors game.
+    * 
+    * Reads the player's choice from the request body, randomly selects the server's choice,
+    * determines the outcome, and responds with the result.
+    * 
+    * @function handlePostResponse
+    * @param {http.IncomingMessage} request - The HTTP request object.
+    * @param {http.ServerResponse} response - The HTTP response object.
+    */
 const fs = require("fs");
 const http = require("http");
 
